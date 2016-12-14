@@ -1,0 +1,32 @@
+<product tvAlternativeId="http://bt.data.product.theplatform.eu/product/data/Product/280173" content_provider="DIS" productOfferingType="Feature" period="1" ad_product="0" promotion="0" services="CAR,YOU" rating="12" multipleavailability="2014-02-21T00:00:00~2015-10-20T23:59:00" availability="2014-02-21T00:00:00~2015-10-20T23:59:00" prices="" sids="S0128047" genre="Drama" title="Auto-Test-SVOD" id="BBJ71120082014">
+    <asset targetBandwidth="SD" LinkedTitleID="" TitleID="" category_id="Film" schedulerChannel="Film" ad="0" subGenre="Drama" productOfferingType="Feature" type="Film" downloadplay="0" artist="" hd="0" duration="0:01" rating="12" year="2009" background="content_providers/images/BT_VOSP_Development_-_Component_Test/80/444/BBJ71120082014_269864_WP.png" packshot="content_providers/images/BT_VOSP_Development_-_Component_Test/80/444/BBJ71120082014_269864_SP.png" synopsis="This quirky rom-com looks at the 500 days in which a coDevil's Duele fall in (and out) of love, from the moment they meet to all the little details that follow.check bychanging longsynopsis" genre="Drama" ClientAssetId="BBJ71120082014" id="3304517453">
+        <service name="YOU">
+            <rating/>
+            <feature aspectratio="16:9" encodingformat="MPEG" scheme="marlin" protected="1" releaseid="http://bt.data.media.theplatform.eu/media/data/Release/3691589265" filesize="6859368" abstract="" title="Auto-Test-SVOD" src="http://bt.link.theplatform.eu/s/6yIRPC/XcJs5uuGsCgo" dur="PT0H00M36.039S" region="main">
+                <subtitle/>
+                <audio/>
+            </feature>
+            <category id="Film"/>
+        </service>
+        <service name="CAR">
+            <rating/>
+            <feature aspectratio="16:9" encodingformat="WM" scheme="wmDrm" protected="1" releaseid="http://bt.data.media.theplatform.eu/media/data/Release/3304517459" filesize="4983761" abstract="" title="Auto-Test-SVOD" src="http://bt.link.theplatform.eu/s/6yIRPC/o5hW_YG2xBEE" dur="PT0H00M00.000S" region="main">
+                <subtitle/>
+                <audio/>
+            </feature>
+            <category id="Film"/>
+        </service>
+        <brand/>
+        <castcrew role="Actor" name="Joseph Gordon-Levitt"/>
+        <castcrew role="Actor" name="Zooey Deschanel"/>
+        <castcrew role="Actor" name="Chloe Grace Moretz"/>
+        <castcrew role="Director" name="Marc Webb"/>
+    </asset>
+    <titles>
+        <list len="14">Auto-Test-SVOD</list>
+        <pack len="14">Auto-Test-SVOD</pack>
+        <ext_pack len="14">Auto-Test-SVOD</ext_pack>
+        <ext_list len="14">Auto-Test-SVOD</ext_list>
+        <search len="14">Auto-Test-SVOD</search>
+    </titles>
+</product>

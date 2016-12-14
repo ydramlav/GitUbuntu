@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.springframework.org/schema/beans" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd 
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.0.xsd">
+
+	<context:property-placeholder
+		location="file:${CommonProp},
+          file:${DAAdapter},
+          file:${ManagePurchase},
+          file:${ClientFacingWebEndPoint},
+          file:${DAAPurchase}"
+		ignore-unresolvable="false" />
+
+
+	
+
+	<bean id="tokenBean" class="com.bt.vosp.common.model.TokenBean" />
+
+	<bean id="applicationContextProvider"
+		class="com.bt.vosp.common.proploader.ApplicationContextProvider" />
+
+	<bean id="nftLoggingBean" class="com.bt.vosp.common.model.NFTLoggingVO"
+		 />
+
+	<!--Common Loading Properties with configurable time start -->
+	<bean id="CommonLoadProps" class="com.bt.vosp.common.proploader.PreProcessor">
+	</bean>
+	<task:scheduled-tasks scheduler="schedulerCommon">
+		<task:scheduled ref="CommonLoadProps" method="commonPropertiesLoading"
+			fixed-rate="${propertyLoadingPeriod}" />
+	</task:scheduled-tasks>
+
+	<task:scheduler id="schedulerCommon" pool-size="5" />
+
+	<!--Common Loading Properties with configurable time end -->
+
+	<!--CFI Loading Properties with configurable time start -->
+
+
+	<!-- <bean id="copyOfMPurchaseCFIProperties"
+		class="com.bt.vosp.webendpoint.impl.model.MPurchaseCFIPropertiesBean" />
+
+	<bean id="WebEndPointPreProcessor"
+		class="com.bt.vosp.webendpoint.impl.helper.WebEndPointPreProcessor">
+		<property name="copyOfMPurchaseCFIProperties" ref="copyOfMPurchaseCFIProperties" />
+	</bean> -->
+
+	<!-- <bean id="WebEndPointPreProcessor"
+		class="com.bt.vosp.webendpoint.impl.helper.WebEndPointPreProcessor">
+	</bean> -->
+	<!-- <task:scheduled-tasks scheduler="schedulerCFIProps">
+		<task:scheduled ref="WebEndPointPreProcessor" method="getWebEndPointPropertiesData"
+			fixed-rate="${propertyLoadingPeriod}" />
+	</task:scheduled-tasks>
+
+	<task:scheduler id="schedulerCFIProps" pool-size="5" /> -->
+
+	<!--CFI Loading Properties with configurable time end -->
+
+	<!--daa Loading Properties with configurable time start -->
+
+	<bean id="daaLoadProps"
+		class="com.bt.vosp.daa.commons.impl.helper.ReadDAAPropertiesHelper" />
+
+	<task:scheduled-tasks scheduler="schedulerDAAProps">
+		<task:scheduled ref="daaLoadProps" method="getPropertiesHelper"
+			fixed-rate="${propertyLoadingPeriod}" />
+	</task:scheduled-tasks>
+
+	<task:scheduler id="schedulerDAAProps" pool-size="5" />
+
+	<!--daa Loading Properties with configurable time end -->
+	
+<bean id="copyMPurchaseProperties"
+		class="com.bt.vosp.capability.mpurchase.impl.model.ManagePurchaseProperties" />
+
+	<bean id="LoadMPurchaseProps"
+		class="com.bt.vosp.capability.mpurchase.impl.constant.ManagePurchasePreProcessor">
+		<property name="copyMPurchaseProperties" ref="copyMPurchaseProperties" />
+	</bean>
+
+	<task:scheduled-tasks scheduler="schedulerManagePurchaseProps">
+		<task:scheduled ref="LoadMPurchaseProps" method="reloadProperties"
+			fixed-rate="${propertyLoadingPeriod}" />
+	</task:scheduled-tasks>
+	<task:scheduler id="schedulerManagePurchaseProps"
+		pool-size="5" />
+
+
+	<!--mPurchase Loading Properties with configurable time start -->
+	<!-- <bean id="LoadMPurchaseProps"
+		class="com.bt.vosp.capability.mpurchase.impl.constant.ManagePurchasePreProcessor" />
+	<task:scheduled-tasks scheduler="schedulerManagePurchaseProps">
+		<task:scheduled ref="LoadMPurchaseProps" method="getPropertiesData"
+			fixed-rate="${propertyLoadingPeriod}" />
+	</task:scheduled-tasks>
+	<task:scheduler id="schedulerManagePurchaseProps"
+		pool-size="5" /> -->
+
+	<!--mPurchase Loading Properties with configurable time end -->
+
+	<!--MPurchaseDAA Loading Properties with configurable time start -->
+
+	<bean id="mpurchaseDAAPreProcessor"
+		class="com.bt.vosp.daa.commons.impl.helper.ReadDAAPurchasePropertiesHelper"></bean>
+
+	<task:scheduled-tasks scheduler="schedulerDAAProps">
+		<task:scheduled ref="mpurchaseDAAPreProcessor" method="getPropertiesHelper"
+			fixed-rate="${propertyLoadingPeriod}" />
+	</task:scheduled-tasks>
+	<task:scheduler id="schedulerDAAProps" pool-size="5" />
+
+	<!-- Resolve domain start -->
+
+	<bean id="resolveDomain" class="com.bt.vosp.common.regreader.ResloveDomainHelper"></bean>
+
+	<bean id="resolveService"
+		class="org.springframework.beans.factory.config.MethodInvokingFactoryBean"
+		lazy-init="true">
+		<property name="targetObject" ref="resolveDomain" />
+		<property name="targetMethod" value="resolveDomainHelper" />
+	</bean>
+
+	<!-- Resolve domain end -->
+
+	<!-- Payment configuration Id start -->
+
+	<bean id="paymentId"
+		class="com.bt.vosp.daa.commerce.payment.impl.processor.PaymentServiceImpl"></bean>
+
+	<bean id="paymentIdService"
+		class="org.springframework.beans.factory.config.MethodInvokingFactoryBean"
+		lazy-init="true">
+		<property name="targetObject" ref="paymentId" />
+		<property name="targetMethod" value="getPaymentId" />
+	</bean>
+
+	<!-- Payment configuration ID end -->
+
+	<!-- Purchase service -->
+
+	<bean id="commerceService"
+		class="com.bt.vosp.capability.mpurchase.impl.processor.RequestToPurchaseServiceImpl"
+		/>
+	<bean id="commerceServiceRemote" class="org.springframework.remoting.rmi.RmiProxyFactoryBean"
+		lazy-init="true">
+		<property name="serviceUrl"
+			value="rmi://${remoteHost}:${remotePort}/ManagePurchase" />
+		<property name="serviceInterface" value="com.bt.vosp.common.service.ManagePurchase" />
+	</bean>
+
+	<bean id="commerceServiceOTG"
+		class="com.bt.vosp.capability.mpurchase.impl.processor.RequestToPurchaseImplOTG"
+		 />
+	<bean id="commerceServiceRemoteOTG" class="org.springframework.remoting.rmi.RmiProxyFactoryBean"
+		lazy-init="true">
+		<property name="serviceUrl"
+			value="rmi://${remoteHost}:${remotePort}/ManagePurchase" />
+		<property name="serviceInterface" value="com.bt.vosp.common.service.ManagePurchaseOTG" />
+	</bean>
+
+	<!-- OneStepOrder service -->
+
+	<bean id="OneStepService"
+		class="com.bt.vosp.daa.commerce.payment.impl.processor.OneStepOrderServiceImpl"
+		/>
+	<bean id="oneStepServiceRemote" class="org.springframework.remoting.rmi.RmiProxyFactoryBean"
+		lazy-init="true">
+		<property name="serviceUrl"
+			value="rmi://${remoteHost}:${remotePort}/OneStepOrderService" />
+		<property name="serviceInterface"
+			value="com.bt.vosp.common.service.OneStepOrderService" />
+	</bean>
+
+	<!-- Payment service -->
+	<bean id="PaymentService"
+		class="com.bt.vosp.daa.commerce.payment.impl.processor.PaymentServiceImpl"
+		 />
+	<bean id="paymentServiceRemote" class="org.springframework.remoting.rmi.RmiProxyFactoryBean"
+		lazy-init="true">
+		<property name="serviceUrl" value="rmi://${remoteHost}:${remotePort}/Payment" />
+		<property name="serviceInterface" value="com.bt.vosp.common.service.PaymentService" />
+	</bean>
+	<!-- Identity service -->
+	<bean id="identityService"
+		class="com.bt.vosp.daa.mpx.identityservice.impl.processor.IdentityServiceImpl"
+		 />
+	<bean id="identityServiceRemote" class="org.springframework.remoting.rmi.RmiProxyFactoryBean"
+		lazy-init="true">
+		<property name="serviceUrl"
+			value="rmi://${remoteHost}:${remotePort}/IdentityService" />
+		<property name="serviceInterface" value="com.bt.vosp.common.service.IdentityService" />
+	</bean>
+	<!-- StoreFront service -->
+	<bean id="storeFrontService"
+		class="com.bt.vosp.daa.storefront.impl.processor.StoreFrontPortalImpl"
+		 />
+	<bean id="storeFrontServiceRemote" class="org.springframework.remoting.rmi.RmiProxyFactoryBean"
+		lazy-init="true">
+		<property name="serviceUrl"
+			value="rmi://${remoteHost}:${remotePort}/GetBroadbandDetails" />
+		<property name="serviceInterface" value="com.bt.vosp.common.service.StoreFrontPortal" />
+	</bean>
+	<!-- DeviceInventory DB Service bean ENDS -->
+
+
+	<!-- Purchase service starts -->
+
+
+
+	<!--<bean id="managePurchaseBean" class="com.bt.vosp.capability.mpurchase.impl.processor.RequesToPurchaseServiceImpl"></bean> 
+		<bean id="MpurchasePreProcessor" class="com.bt.vosp.capability.mpurchase.impl.constant.ManagePurchasePreprocessor"></bean> --><!-- Purchase service ends -->
+
+</beans>

@@ -1,0 +1,30 @@
+<locationCheckForVoDPurchases>
+                                 <productOffering type="rental">
+                                                 <variant type="SD">
+                                                                 <gracePeriod value="120" />
+                                                                 <maxThreshold value="60" />
+                                                 </variant>
+                                                 <variant type="HD">
+                                                                 <gracePeriod value="180" />
+                                                                 <maxThreshold value="160" />
+                                                 </variant>
+                                                 <variant type="4K">
+                                                                 <gracePeriod value="100" />
+                                                                 <maxThreshold value="30" />
+                                                 </variant>
+                                 </productOffering>                        
+                                <productOffering type="EST">
+                                                 <variant type="SD">
+                                                                 <gracePeriod value="100" />
+                                                                 <maxThreshold value="70" />
+                                                 </variant>
+                                                 <variant type="HD">
+                                                                 <gracePeriod value="120" />
+                                                                 <maxThreshold value="90" />
+                                                 </variant>
+                                                 <variant type="4K">
+                                                                 <gracePeriod value="120" />
+                                                                 <maxThreshold value="100" />
+                                                 </variant>
+                                 </productOffering>
+</locationCheckForVoDPurchases>

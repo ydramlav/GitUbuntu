@@ -1,0 +1,17 @@
+{
+"statusCode":"0",
+"statusMessage":"success",
+"lineToAccountInfoList":[{
+	"appId":"Ddde47b4fc-10fe-11e1-abcd-10072015T1",
+	"ip":"15.15.15.3",
+	"btwsid":"BTWSID711300700",
+	"serviceAction":"GETAPPVERSION",
+	"vsid":"V1000000054", 
+	"networkLineType":"WBC",
+	"networkIspType":"BT",
+	"latestVerificationTime":"16-MAY-15 10.54.46.000",
+	"earliestTrustTime":"16-MAY-15 10.54.46.000",
+	"reliabilityIndex":"R",
+	"latestRequestTime":"16-MAY-15 10.54.46.000"
+}]
+}

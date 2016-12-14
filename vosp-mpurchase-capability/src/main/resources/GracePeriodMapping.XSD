@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+  <xs:element name="locationCheckForVoDPurchases" type="locationCheckForVoDPurchasesType"/>
+  <xs:complexType name="gracePeriodType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="GracePeriodValue" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="maxThresholdType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="MaxThresholdValue" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="variantType">
+    <xs:sequence>
+      <xs:element type="gracePeriodType" name="gracePeriod"/>
+      <xs:element type="maxThresholdType" name="maxThreshold"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="type" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="productOfferingType">
+    <xs:sequence>
+      <xs:element type="variantType" name="variant" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="type" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="locationCheckForVoDPurchasesType">
+    <xs:sequence>
+      <xs:element type="productOfferingType" name="productOffering" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

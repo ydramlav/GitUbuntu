@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<listOfBlockedDevices>
-<deviceGroup make="Apple" description="Group of all the ‘Apple’devices ">
-	<models>
-		<model name="iPhone 5[^CS]?\s\(GSM\+CDMA\)" description="All the iPhone 5 models but NOT iPhone 5C and iPhone 5S models"/>
-	</models>
-</deviceGroup>
-</listOfBlockedDevices>

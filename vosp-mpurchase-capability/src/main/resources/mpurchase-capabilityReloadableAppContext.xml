@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.springframework.org/schema/beans" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd 
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.0.xsd">
+
+	<context:annotation-config />
+
+	<context:component-scan base-package="com.bt.vosp.capability.mpurchase">
+		<context:exclude-filter type="annotation"
+			expression="org.springframework.stereotype.Component" />
+	</context:component-scan>
+
+	<!-- To load application properties -->
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>file:${ManagePurchase}</value>
+			</list>
+		</property>
+	</bean>
+
+<!--  Sprint12 changes -->
+	<!-- <bean id="serviceType"
+		class="com.bt.vosp.location.manager.common.ServiceType"
+		>
+	</bean> -->
+
+<!--  Sprint12 changes -->
+	
+
+
+	<bean id="mpurchaseProperties"
+		class="com.bt.vosp.capability.mpurchase.impl.model.ManagePurchaseProperties"
+		depends-on="propertyConfigurer">
+	</bean>
+
+	<!-- ApplicationContextProvider -->
+	<bean id="mpurchasePropertiesLoader"
+		class="com.bt.vosp.capability.mpurchase.impl.model.PurchaseApplicationContextProvider" />
+
+	<!-- Spring validator which follows JSR-303 specification -->
+	<bean id="validator"
+		class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean" />
+
+	
+	
+	<!-- <bean id="exporter" class="org.springframework.jmx.export.MBeanExporter" lazy-init="false">
+	    <property name="beans">
+	      <map>
+	        <entry key="bean:name=ServiceActionBean" value-ref="serviceAction"/>
+	      </map>
+	    </property>
+	    <property name="registrationBehaviorName" value="REGISTRATION_REPLACE_EXISTING"/>
+ 	</bean> -->
+
+</beans>

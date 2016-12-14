@@ -1,0 +1,1 @@
+{"$xmlns":{"ent":"http:\/\/xml.theplatform.com\/data\/entitlement\/Entitlement","rgt":"http:\/\/xml.theplatform.com\/data\/entitlement\/Rights"},"startIndex":1,"itemsPerPage":500,"entryCount":1,"entries":[{"id":"http:\/\/data.entitlement.theplatform.eu\/eds\/data\/Entitlement\/47189055","ent$availableDate":1465139597000,"ent$expirationDate":1465312397000}]}

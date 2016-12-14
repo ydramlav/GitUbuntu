@@ -1,0 +1,15 @@
+<VoSPContentCatalogueServiceTypeToDeviceServiceTypeMapping>
+
+	<DeviceServiceType type="Cardinal"> 
+		<ContentCatalogueServiceType>CAR</ContentCatalogueServiceType>
+	</DeviceServiceType>
+		
+	<DeviceServiceType type="Youview">
+		<ContentCatalogueServiceType>YOU</ContentCatalogueServiceType>
+	</DeviceServiceType>
+		
+	<DeviceServiceType type="IETV">
+		<ContentCatalogueServiceType>IET</ContentCatalogueServiceType>
+	</DeviceServiceType>
+
+</VoSPContentCatalogueServiceTypeToDeviceServiceTypeMapping>

@@ -1,0 +1,31 @@
+<product tvAlternativeId="http://data.product.theplatform.eu/product/data/Product/402969" content_provider="BTV" productOfferingType="collection-EST" period="10512000" ad_product="0" promotion="0" services="CAR,YOU" rating="12" multipleavailability="2015-03-01T00:00:00~2018-06-30T23:59:00" availability="2015-03-01T00:00:00~2018-06-30T23:59:00" prices="5,movida_37273,2015-03-01T00:00:00.0000000,2016-01-01T00:00:00.0000000" sids="" genre="Drama" title="OtgColEst_Mar10" id="movida_37273">
+    <collection targetBandwidth="4K" HD="0" ClientAssetId="movida_37273" bundledProductCount="2" count="2" subGenre="" background="" packshot="content_providers/images/BT_VOSP_Test_-_SYSTEST-2/906/968/BBJ366053A_e6d312b75005e0a4_DP.png" listview="1" description="" downloadplay="0" rating="12" duration="0:32" LinkedTitleId="" TitleId="movida_37273" id="movida_37273">
+        <product tvAlternativeId="http://data.product.theplatform.eu/product/data/Product/402970" content_provider="BTV" productOfferingType="Feature-EST" period="10512000" ad_product="0" promotion="0" services="CAR,YOU" rating="12" multipleavailability="2015-03-01T00:00:00~2018-06-30T23:59:00" availability="2015-03-01T00:00:00~2018-06-30T23:59:00" prices="5,BBJ366053A,2015-03-01T00:00:00.0000000,2016-01-01T00:00:00.0000000" sids="" genre="Drama" parentGUID="movida_37273" title="OtgColEst_Mar10 - OtgCol2Est_Mar10" id="BBJ366053A">
+            <asset targetBandwidth="SD" LinkedTitleID="" TitleID="366053" category_id="TV" schedulerChannel="TV" ad="0" series_number="1" episode_number="1" productOfferingType="Feature-EST" type="TV" downloadplay="0" artist="" hd="0" duration="0:16" rating="12" year="2012" background="" packshot="content_providers/images/BT_VOSP_Test_-_SYSTEST-2/906/468/BBJ366053A_e6d312b75005e0a4_SP.png" synopsis="Long description" genre="Drama" ClientAssetId="BBJ366053A" id="6318149501"/>
+            <titles>
+                <list len="16">OtgCol2Est_Mar10</list>
+                <pack len="16">OtgCol2Est_Mar10</pack>
+                <ext_pack len="34">OtgColEst_Mar10 - OtgCol2Est_Mar10</ext_pack>
+                <ext_list len="34">OtgColEst_Mar10 - OtgCol2Est_Mar10</ext_list>
+                <search len="16">OtgCol2Est_Mar10</search>
+            </titles>
+        </product>
+        <product tvAlternativeId="http://data.product.theplatform.eu/product/data/Product/402968" content_provider="BTV" productOfferingType="Feature-EST" period="10512000" ad_product="0" promotion="0" services="CAR,YOU" rating="12" multipleavailability="2015-03-01T00:00:00~2018-06-30T23:59:00" availability="2015-03-01T00:00:00~2018-06-30T23:59:00" prices="5,BBJ366052A,2015-03-01T00:00:00.0000000,2016-01-01T00:00:00.0000000" sids="" genre="Drama" parentGUID="movida_37273" title="OtgColEst_Mar10 - OtgCol1Est_Mar10" id="BBJ366052A">
+            <asset targetBandwidth="SD" LinkedTitleID="" TitleID="366052" category_id="TV" schedulerChannel="TV" ad="0" series_number="1" episode_number="2" productOfferingType="Feature-EST" type="TV" downloadplay="0" artist="" hd="0" duration="0:16" rating="12" year="2012" background="" packshot="content_providers/images/BT_VOSP_Test_-_SYSTEST-2/906/968/BBJ366052A_e6d312b75005e0a4_SP.png" synopsis="Long description" genre="Drama" ClientAssetId="BBJ366052A" id="6318661343"/>
+            <titles>
+                <list len="16">OtgCol1Est_Mar10</list>
+                <pack len="16">OtgCol1Est_Mar10</pack>
+                <ext_pack len="34">OtgColEst_Mar10 - OtgCol1Est_Mar10</ext_pack>
+                <ext_list len="34">OtgColEst_Mar10 - OtgCol1Est_Mar10</ext_list>
+                <search len="16">OtgCol1Est_Mar10</search>
+            </titles>
+        </product>
+    </collection>
+    <titles>
+        <list len="15">OtgColEst_Mar10</list>
+        <pack len="15">OtgColEst_Mar10</pack>
+        <ext_pack len="15">OtgColEst_Mar10</ext_pack>
+        <ext_list len="15">OtgColEst_Mar10</ext_list>
+        <search len="15">OtgColEst_Mar10</search>
+    </titles>
+</product>

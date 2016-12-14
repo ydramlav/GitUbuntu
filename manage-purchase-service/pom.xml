@@ -1,0 +1,86 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.bt.vosp</groupId>
+		<artifactId>manage-purchase</artifactId>
+		<version>5.6</version>
+	</parent>
+	<groupId>com.bt.vosp.manage-purchase</groupId>
+	<artifactId>manage-purchase-service</artifactId>
+	<packaging>war</packaging>
+	<name>manage-purchase-service</name>
+	<description>manage-purchase-service</description>
+	<dependencies>
+		<!-- <dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+		</dependency> -->
+	<!-- 	<dependency>
+			<groupId>com.bt.vosp.manage-purchase</groupId>
+			<artifactId>vosp-common</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.bt.vosp.manage-purchase</groupId>
+			<artifactId>vosp-dataaccess-adapter</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency> -->
+		<dependency>
+      <groupId>custom.com.bt.vosp</groupId>
+      <artifactId>MPurchase-Common</artifactId>
+      <version>1.1</version>
+    </dependency>
+    <dependency>
+      <groupId>custom.com.bt.vosp</groupId>
+      <artifactId>MPurchase-DAA</artifactId>
+      <version>1.1</version>
+    </dependency>
+		
+		<dependency>
+			<groupId>com.bt.vosp.manage-purchase</groupId>
+			<artifactId>vosp-mpurchase-capability</artifactId>
+			<version>5.6</version>
+		</dependency>
+		<dependency>
+			<groupId>com.bt.vosp.manage-purchase</groupId>
+			<artifactId>vosp-web-endpoint</artifactId>
+			<version>5.6</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<finalName>manage-purchase-5.6</finalName>
+	<pluginManagement>
+			<plugins>
+				<!-- <plugin> <groupId>com.oracle.weblogic</groupId> <artifactId>weblogic-maven-plugin</artifactId> 
+					<version>10.3.6.0</version> <configuration> <adminurl>http://localhost:7001/</adminurl> 
+					<user>weblogic</user> <password>welcome1</password> <upload>true</upload> 
+					<action>deploy</action> <remote>false</remote> <verbose>true</verbose> <nowait>true</nowait> 
+					<source>${project.build.directory}/${project.build.finalName}.${project.packaging}</source> 
+					<name>${project.build.finalName}</name> </configuration> <executions> <execution> 
+					<phase>install</phase> <goals> <goal>deploy</goal> </goals> </execution> 
+					</executions> </plugin> -->
+
+				<plugin>
+					<groupId>com.oracle.weblogic</groupId>
+					<artifactId>weblogic-maven-plugin</artifactId>
+					<version>12.2.1</version>
+					<configuration>
+						<adminurl>t3://localhost:7004</adminurl>
+						<user>weblogic</user>
+						<password>welcome1</password>
+						<upload>true</upload>
+						<action>deploy</action>
+						<remote>false</remote>
+						<verbose>true</verbose>
+						<source>${project.build.directory}/${project.build.finalName}.${project.packaging}</source>
+						<name>${project.build.finalName}</name>
+					</configuration>
+				</plugin>
+
+
+			</plugins>
+		</pluginManagement>
+		</build>
+</project>

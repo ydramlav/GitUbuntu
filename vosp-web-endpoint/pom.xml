@@ -1,0 +1,95 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.bt.vosp</groupId>
+		<artifactId>manage-purchase</artifactId>
+		<version>5.6</version>
+	</parent>
+	<groupId>com.bt.vosp.manage-purchase</groupId>
+	<artifactId>vosp-web-endpoint</artifactId>
+	<version>5.6</version>
+	<name>vosp-web-endpoint</name>
+	<description>vosp-web-endpoint</description>
+	<dependencies>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.4</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.json-lib</groupId>
+			<artifactId>json-lib</artifactId>
+			<version>2.3</version>
+			<classifier>jdk15</classifier>
+		</dependency>
+		<!-- <dependency>
+			<groupId>custom.schema.bt</groupId>
+			<artifactId>associate-device-request-2.0</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>custom.schema.bt</groupId>
+			<artifactId>associate-device-response-2.0</artifactId>
+			<version>1.0</version>
+		</dependency> -->
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20141113</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+		<!-- <dependency>
+			<groupId>com.bt.vosp.manage-purchase</groupId>
+			<artifactId>vosp-common</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency> -->
+		<dependency>
+      <groupId>custom.com.bt.vosp</groupId>
+      <artifactId>MPurchase-Common</artifactId>
+      <version>1.1</version>
+    </dependency>
+   
+		
+		<dependency>
+			<groupId>com.bt.vosp.manage-purchase</groupId>
+			<artifactId>vosp-mpurchase-capability</artifactId>
+			<version>5.6</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.xmlbeans</groupId>
+			<artifactId>xmlbeans</artifactId>
+			<version>2.3.0</version>
+		</dependency>
+		<!-- <dependency>
+			<groupId>wsdl4j</groupId>
+			<artifactId>wsdl4j</artifactId>
+			<version>1.6.2</version>
+		</dependency> -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.json-lib</groupId>
+			<artifactId>json-lib</artifactId>
+			<version>2.3</version>
+			<classifier>jdk15</classifier>
+		</dependency>
+		<!-- <dependency>
+			<groupId>xom</groupId>
+			<artifactId>xom</artifactId>
+			<version>1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.restlet.jee</groupId>
+			<artifactId>org.restlet</artifactId>
+			<version>2.0.0</version>
+		</dependency> -->
+	</dependencies>
+</project>

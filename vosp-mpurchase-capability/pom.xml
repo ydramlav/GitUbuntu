@@ -1,0 +1,142 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.bt.vosp</groupId>
+		<artifactId>manage-purchase</artifactId>
+		<version>5.6</version>
+	</parent>
+	<groupId>com.bt.vosp.manage-purchase</groupId>
+	<artifactId>vosp-mpurchase-capability</artifactId>
+	<version>5.6</version>
+	<name>vosp-mpurchase-capability</name>
+	<description>vosp-mpurchase-capability</description>
+
+	<repositories>
+		<repository>
+			<id>powermock-repo</id>
+			<url>http://powermock.googlecode.com/svn/repo/</url>
+		</repository>
+	</repositories>
+	<properties>
+		<powermock.version>1.6.1</powermock.version>
+	</properties>
+
+	<dependencies>
+		<!-- <dependency> <groupId>com.bt.vosp.manage-purchase</groupId> <artifactId>vosp-common</artifactId> 
+			<version>1.0.0-SNAPSHOT</version> </dependency> <dependency> <groupId>com.bt.vosp.manage-purchase</groupId> 
+			<artifactId>vosp-dataaccess-adapter</artifactId> <version>1.0.0-SNAPSHOT</version> 
+			</dependency> -->
+		<dependency>
+			<groupId>custom.com.bt.vosp</groupId>
+			<artifactId>MPurchase-Common</artifactId>
+			<version>1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>custom.com.bt.vosp</groupId>
+			<artifactId>MPurchase-DAA</artifactId>
+			<version>1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+			<version>1.9.5</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- <dependency> <groupId>vosp2</groupId> <artifactId>device-sw-validation</artifactId> 
+			<version>1.0.0-SNAPSHOT</version> </dependency> -->
+		<dependency>
+			<groupId>com.bt.vosp.library</groupId>
+			<artifactId>device-sw-validation</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.bt.vosp.library</groupId>
+			<artifactId>csv-writer</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.powermock</groupId>
+			<artifactId>powermock-core</artifactId>
+			<version>${powermock.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.powermock</groupId>
+			<artifactId>powermock-module-junit4</artifactId>
+			<version>${powermock.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.powermock</groupId>
+			<artifactId>powermock-api-mockito</artifactId>
+			<version>${powermock.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.github.tomakehurst</groupId>
+			<artifactId>wiremock</artifactId>
+			<version>1.46</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>5.1.2.Final</version>
+		</dependency>
+		 <dependency>
+			<groupId>javax.el</groupId>
+			<artifactId>javax.el-api</artifactId>
+			<version>2.2.4</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.web</groupId>
+			<artifactId>javax.el</artifactId>
+			<version>2.2.4</version>
+			<scope>test</scope>
+		</dependency>
+		
+
+
+	</dependencies>
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<configuration>
+						<argLine>-DClientFacingWebEndPoint=src/test/resources/ClientFacingWebEndPoint.properties
+							-DCommonProp=src/test/resources/common.properties
+							-DCommonLog=src/test/resources/log4j.properties
+							-DDAAdapter=src/test/resources/DataAccessAdapter.properties
+							-DDAAPurchase=src/test/resources/DAAPurchase.properties
+							-DNetworkService=src/test/resources/NetworkService.properties
+							-DManagePurchase=src/test/resources/ManagePurchase.properties</argLine>
+						<includes>
+							<include>**/*.class</include>
+						</includes>
+						<testFailureIgnore>false</testFailureIgnore>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+</project>

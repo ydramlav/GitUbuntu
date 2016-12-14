@@ -1,0 +1,34 @@
+{
+   "oneStepOrderResponse":{
+      "status":"Error",
+      "currency":"GBP",
+      "providerOrderRef":"http:\/\/admin.storefront.commerce.theplatform.eu\/storefront\/data\/OrderHistory\/69174073",
+      "errors":[
+         {
+            "message":"Unable to authenticate user using secondaryAuth.",
+            "code":"checkout.secondary.auth.failed"
+         }
+      ],
+      "orderTotal":1.25,
+      "purchaseItems":[
+         {
+            "currency":"GBP",
+            "productId":"http:\/\/data.product.theplatform.eu\/product\/data\/Product\/216776",
+            "quantity":1,
+            "providerItemRef":"http:\/\/order.commerce.theplatform.eu\/order\/data\/OrderItem\/69174075",
+            "productSalesConditionResult":{
+               "title":"CheckOwnership",
+               "guid":"ruleset_checkownership",
+               "conclusion":true,
+               "evaluations":[
+                  {
+                     "title":"Already owned via subscription",
+                     "guid":"rLpvQCeU7hhhFC0iWBPuF4bdKy0lCwK7",
+                     "conclusion":true
+                     }
+               ]
+            }
+         }
+      ]
+   }
+}

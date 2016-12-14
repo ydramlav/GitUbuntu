@@ -1,0 +1,31 @@
+<locationCheckForVoD name="Purchase">
+                                
+                                 <productOffering type="feature">
+                                                 <bandwidth type="SD">
+                                                                 <gracePeriod value="2880" />
+                                                                 <maxThreshold value="60" />
+                                                 </bandwidth>
+                                                 <bandwidth type="HD">
+                                                                 <gracePeriod value="2880" />
+                                                                 <maxThreshold value="1600" />
+                                                 </bandwidth>
+                                                 <bandwidth type="4K">
+                                                                 <gracePeriod value="2880" />
+                                                                 <maxThreshold value="30" />
+                                                 </bandwidth>
+                                 </productOffering>                        
+                                <productOffering type="feature-EST,season-EST,collection-EST">
+                                                 <bandwidth type="SD">
+                                                                 <gracePeriod value="2880" />
+                                                                 <maxThreshold value="70" />
+                                                 </bandwidth>
+                                                 <bandwidth type="HD">
+                                                                 <gracePeriod value="2880" />
+                                                                 <maxThreshold value="90" />
+                                                 </bandwidth>
+                                                 <bandwidth type="4K">
+                                                                 <gracePeriod value="2880" />
+                                                                 <maxThreshold value="100" />
+                                                 </bandwidth>
+                                 </productOffering>
+</locationCheckForVoD>

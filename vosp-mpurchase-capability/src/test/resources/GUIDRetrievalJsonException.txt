@@ -1,0 +1,290 @@
+{
+    "$xmlns": {
+        "plproduct": "http://xml.theplatform.com/product/data/Product"
+    },
+    "startIndex": 1,
+    "itemsPerPage": 2,
+    "entryCount": 2,
+    "entries": [
+        {
+            "$xmlns": {
+                "btproduct": "http://bt.com/vosp/product"
+            },
+            "id": "http://data.product.theplatform.eu/product/data/Product/915170",
+            "guid": "movida_52059",
+            "updated": 1476771729000,
+            "title": "The Newsroom Series 1",
+            "description": "A cable-news anchor and his staff set out to 'do the news well' in the face of numerous obstacles in Season 1 of this HBO series.",
+            "added": 1476771698000,
+            "ownerId": "http://access.auth.theplatform.com/data/Account/2403646379",
+            "addedByUserId": "https://identity.auth.theplatform.com/idm/data/User/mpx/2684107",
+            "updatedByUserId": "https://identity.auth.theplatform.com/idm/data/User/mpx/2682750",
+            "version": 1,
+            "locked": false,
+            "plproduct$disabled": false,
+            "plproduct$longDescription": "A cable-news anchor and his staff set out to 'do the news well' in the face of numerous obstacles in Season 1 of this HBO series.",
+            "plproduct$longDescriptionLocalized": {
+                
+            },
+            "plproduct$images": {
+                
+            },
+            "plproduct$productTags": [
+                
+            ],
+            "plproduct$productTagIds": [
+                
+            ],
+            "plproduct$pricingTemplateId": null,
+            "plproduct$pricingPlan": {
+                "plproduct$isTaxIncluded": false,
+                "plproduct$isRecurring": false,
+                "plproduct$pricingTiers": [
+                    {
+                        "plproduct$absoluteStart": 1445149320000,
+                        "plproduct$absoluteEnd": 1508307720000,
+                        "plproduct$rightsIds": [
+                            
+                        ],
+                        "plproduct$subscriptionUnits": "month",
+                        "plproduct$billingFrequency": 0,
+                        "plproduct$minimumSubscriptionPeriod": 0,
+                        "plproduct$productTagIds": [
+                            
+                        ],
+                        "plproduct$productTags": [
+                            
+                        ],
+                        "plproduct$amounts": {
+                            
+                        },
+                        "plproduct$isBlackout": false,
+                        "plproduct$isActive": true
+                    }
+                ],
+                "plproduct$masterProductTagIds": [
+                    
+                ]
+            },
+            "plproduct$offerStartDate": 1445149320000,
+            "plproduct$offerEndDate": 1508307720000,
+            "plproduct$scopeIds": [
+                "http://data.media.theplatform.eu/media/data/Media/guid/2403646379/movida_52059"
+            ],
+            "plproduct$scopes": [
+                {
+                    "plproduct$scopeId": "http://data.media.theplatform.eu/media/data/Media/guid/2403646379/movida_52059",
+                    "plproduct$id": "http://data.media.theplatform.eu/media/data/Media/61687365148",
+                    "plproduct$guid": "movida_52059",
+                    "plproduct$title": "The Newsroom Series 1",
+                    "plproduct$description": "A cable-news anchor and his staff set out to 'do the news well' in the face of numerous obstacles in Season 1 of this HBO series.",
+                    "plproduct$productMetadata": {
+                        "linearIsStreamable": "false",
+                        "subtitled": "false",
+                        "sourceSystemTimestamp": "1476770185",
+                        "longDescription": "A cable-news anchor and his staff set out to 'do the news well' in the face of numerous obstacles in Season 1 of this HBO series.",
+                        "linearOutputProtection": "false",
+                        "clientAssetId": "movida_52059",
+                        "mediaType": "PVODSeries",
+                        "audioDescription": "false",
+                        "structureType": "collection"
+                    },
+                    "plproduct$fulfillmentStatus": "fulfillable"
+                }
+            ],
+            "plproduct$paymentTypes": [
+                
+            ],
+            "plproduct$keywords": [
+                
+            ],
+            "plproduct$isApproved": false,
+            "plproduct$bundledProductIds": [
+                
+            ],
+            "plproduct$isSubscription": false,
+            "plproduct$ratings": [
+                
+            ],
+            "plproduct$titleLocalized": {
+                
+            },
+            "plproduct$descriptionLocalized": {
+                
+            },
+            "plproduct$dynamicallyUpdatePricingPlan": false,
+            "plproduct$salesConditionRuleSetId": null,
+            "plproduct$approvalRuleSetId": null,
+            "plproduct$evaluateApprovalRuleSet": false,
+            "plproduct$allowPurchaseWithoutPaymentInstrument": false,
+            "plproduct$evaluateBundledProductSalesConditions": false,
+            "plproduct$isGiftVoucher": false,
+            "btproduct$assetTitleId": "movida_52059",
+            "btproduct$clientAssetId": "movida_52059",
+            "btproduct$collectionBundledCount": 10,
+            "btproduct$duration": 0,
+            "btproduct$editorialVersion": "movida_52059",
+            "btproduct$inhibitProduct": false,
+            "btproduct$isMixedCollection": false,
+            "btproduct$isPromotional": true,
+            "btproduct$isRollingCollection": false,
+            "btproduct$listView": true,
+            "btproduct$productOfferingType": "season",
+            "btproduct$productType": "season",
+            "btproduct$seriesNumber": 1,
+            "btproduct$structureType": "collection",
+            "btproduct$titleAtomic": "The Newsroom",
+            "btproduct$titleDefault": "The Newsroom Series 1",
+            "btproduct$titleList": "The Newsroom Series 1",
+            "btproduct$titleListExt": "The Newsroom Series 1",
+            "btproduct$titlePackshot": "The Newsroom Series 1",
+            "btproduct$titlePackshotExt": "The Newsroom Series 1",
+            "btproduct$titleSearch": "The Newsroom Series 1",
+            "btproduct$titleSort": "Newsroom, The Series 1",
+            "btproduct$validForStorefront": false,
+            "btproduct$zeroTouch": true
+        },
+        {
+            "$xmlns": {
+                "btproduct": "http://bt.com/vosp/product"
+            },
+            "id": "http://data.product.theplatform.eu/product/data/Product/692208",
+            "guid": "movida_62827",
+            "updated": 1476749146000,
+            "title": "dtpcollSp14hdr",
+            "description": null,
+            "added": 1458757277000,
+            "ownerId": "http://access.auth.theplatform.com/data/Account/2403646379",
+            "addedByUserId": "https://identity.auth.theplatform.com/idm/data/User/mpx/2684107",
+            "updatedByUserId": "https://identity.auth.theplatform.com/idm/data/User/mpx/2682750",
+            "version": 7,
+            "locked": false,
+            "plproduct$disabled": false,
+            "plproduct$longDescription": "Long",
+            "plproduct$longDescriptionLocalized": {
+                
+            },
+            "plproduct$images": {
+                "image-double-packshot": [
+                    {
+                        "plproduct$mediaFileId": "http://data.media.theplatform.eu/media/data/MediaFile/32854085424",
+                        "plproduct$height": 120,
+                        "plproduct$width": 214,
+                        "plproduct$url": "content_providers/images/BT_VOSP_Test_-_SYSTEST-2/613/100/2238323_ae1ed489cb747cee_DP.jpg"
+                    }
+                ]
+            },
+            "plproduct$productTags": [
+                
+            ],
+            "plproduct$productTagIds": [
+                
+            ],
+            "plproduct$pricingTemplateId": null,
+            "plproduct$pricingPlan": {
+                "plproduct$isTaxIncluded": false,
+                "plproduct$isRecurring": false,
+                "plproduct$pricingTiers": [
+                    {
+                        "plproduct$absoluteStart": 1445126700000,
+                        "plproduct$absoluteEnd": 1508285100000,
+                        "plproduct$rightsIds": [
+                            
+                        ],
+                        "plproduct$subscriptionUnits": "month",
+                        "plproduct$billingFrequency": 0,
+                        "plproduct$minimumSubscriptionPeriod": 0,
+                        "plproduct$productTagIds": [
+                            
+                        ],
+                        "plproduct$productTags": [
+                            
+                        ],
+                        "plproduct$amounts": {
+                            
+                        },
+                        "plproduct$isBlackout": false,
+                        "plproduct$isActive": true
+                    }
+                ],
+                "plproduct$masterProductTagIds": [
+                    
+                ]
+            },
+            "plproduct$offerStartDate": 1445126700000,
+            "plproduct$offerEndDate": 1508285100000,
+            "plproduct$scopeIds": [
+                "http://data.media.theplatform.eu/media/data/Media/guid/2403646379/movida_62827"
+            ],
+            "plproduct$scopes": [
+               
+                    "plproduct$scopeId": "http://data.media.theplatform.eu/media/data/Media/guid/2403646379/movida_62827",
+                    "plproduct$id": "http://data.media.theplatform.eu/media/data/Media/32854085421",
+                    "plproduct$guid": "movida_62827",
+                    "plproduct$title": "dtpcollSp14hdr",
+                    "plproduct$description": "",
+                    "plproduct$productMetadata": {
+                        "linearIsStreamable": "false",
+                        "sourceSystemTimestamp": "1458757087",
+                        "longDescription": "Long",
+                        "linearOutputProtection": "false",
+                        "clientAssetId": "movida_62827",
+                        "mediaType": "otherCollection",
+                        "audioDescription": "false",
+                        "structureType": "collection"
+                    },
+                    "plproduct$fulfillmentStatus": "fulfillable"
+                }
+            ],
+            "plproduct$paymentTypes": [
+                
+            ],
+            "plproduct$keywords": [
+                
+            ],
+            "plproduct$isApproved": false,
+            "plproduct$bundledProductIds": [
+                
+            ],
+            "plproduct$isSubscription": false,
+            "plproduct$ratings": [
+                
+            ],
+            "plproduct$titleLocalized": {
+                
+            },
+            "plproduct$descriptionLocalized": {
+                
+            },
+            "plproduct$dynamicallyUpdatePricingPlan": false,
+            "plproduct$salesConditionRuleSetId": null,
+            "plproduct$approvalRuleSetId": null,
+            "plproduct$evaluateApprovalRuleSet": false,
+            "plproduct$allowPurchaseWithoutPaymentInstrument": false,
+            "plproduct$evaluateBundledProductSalesConditions": false,
+            "plproduct$isGiftVoucher": false,
+            "btproduct$assetTitleId": "movida_62827",
+            "btproduct$clientAssetId": "movida_62827",
+            "btproduct$collectionBundledCount": 0,
+            "btproduct$duration": 0,
+            "btproduct$inhibitProduct": false,
+            "btproduct$isMixedCollection": false,
+            "btproduct$isPromotional": false,
+            "btproduct$isRollingCollection": true,
+            "btproduct$listView": true,
+            "btproduct$productOfferingType": "collection",
+            "btproduct$productType": "collection",
+            "btproduct$seriesNumber": 1,
+            "btproduct$structureType": "collection",
+            "btproduct$titleDefault": "dtpcollSp14hdr",
+            "btproduct$titleList": "dtpcollSp14hdr",
+            "btproduct$titleListExt": "dtpcollSp14hdr",
+            "btproduct$titlePackshot": "dtpcollSp14hdr",
+            "btproduct$titlePackshotExt": "dtpcollSp14hdr",
+            "btproduct$titleSearch": "dtpcollSp14hdr",
+            "btproduct$titleSort": "dtpcollSp14hdr",
+            "btproduct$validForStorefront": false,
+            "btproduct$zeroTouch": true
+        }
+    ]
+}
