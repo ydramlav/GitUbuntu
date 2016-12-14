@@ -8,7 +8,7 @@
 	<name>NGCA</name>
 	<properties>
 		<spring.version>4.3.2.RELEASE</spring.version>
-		<WL_SERVER_LIB>\root\.m2\repository\com\oracle\weblogic\weblogic-maven-plugin\12.2.1-0-0</WL_SERVER_LIB>
+		<!--<WL_SERVER_LIB>\root\.m2\repository\com\oracle\weblogic\weblogic-maven-plugin\12.2.1-0-0</WL_SERVER_LIB>-->
 		
 	</properties>
 	<dependencies>
@@ -209,13 +209,13 @@
     <artifactId>junit</artifactId>
     <version>4.8.1</version>
 </dependency>
-	<dependency>
+	<!--<dependency>
  <groupId>com.oracle.weblogic</groupId> 
       <artifactId>weblogic-maven-plugin</artifactId> 
       <version>12.2.1-0-0</version>
 <scope>system</scope>
 <systemPath>${WL_SERVER_LIB}\weblogic-maven-plugin-12.2.1-0-0.jar</systemPath> 
- </dependency>
+ </dependency>-->
 
 	</dependencies>
 	<repositories>
@@ -231,7 +231,7 @@
 	<build>
 		<finalName>NGCA</finalName>
 		<plugins>
-		 <plugin> 
+		<!-- <plugin> 
  
  
       <configuration> 
@@ -245,7 +245,7 @@
 <source>${project.build.directory}/${project.build.finalName}.${project.packaging}</source> 
          <name>${project.build.finalName}</name> 
       </configuration> 
-  </plugin> 
+  </plugin> -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
