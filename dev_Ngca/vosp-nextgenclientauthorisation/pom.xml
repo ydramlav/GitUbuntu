@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.bt.vosp</groupId>
+    <artifactId>NGCA</artifactId>
+    <version>1.0</version>
+  </parent>
+  <artifactId>vosp-nextgenclientauthorisation</artifactId>
+  <name>vosp-nextgenclientauthorisation</name>
+   <dependencies>
+  	<dependency>
+			<groupId>com.bt.vosp.common</groupId>
+			<artifactId>vosp-common</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.bt.vosp.daa</groupId>
+			<artifactId>vosp-dataaccessadapter</artifactId>
+			<version>1.0</version>
+		</dependency>
+		 <dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.4</version>
+		</dependency>
+		
+  </dependencies>
+  <groupId>com.bt.vosp.capability</groupId>
+  <version>1.0</version>
+</project>

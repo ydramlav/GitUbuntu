@@ -1,0 +1,37 @@
+log4j.logger.DAAdapterLog=INFO,DAAdapterLog
+#Appender DAAdapterLog
+log4j.appender.DAAdapterLog=org.apache.log4j.RollingFileAppender
+log4j.appender.DAAdapterLog.File=C:/Users/609623983/project/Sprint19/NGCA/logs/CFI.log
+log4j.appender.DAAdapterLog.MaxFileSize=500KB
+log4j.appender.DAAdapterLog.MaxBackupIndex=100
+log4j.appender.DAAdapterLog.layout=com.bt.vosp.common.logging.CustomizedXMLLayout
+
+
+
+# Category A8
+log4j.logger.VospCommonLog=INFO,VospCommonLog
+#Appender VospCommonRestLog
+log4j.appender.VospCommonLog=org.apache.log4j.RollingFileAppender
+log4j.appender.VospCommonLog.File=C:/Users/609623983/project/Sprint19/NGCA/logs/CFI.log
+log4j.appender.VospCommonLog.MaxFileSize=500KB
+log4j.appender.VospCommonLog.MaxBackupIndex=100
+log4j.appender.VospCommonLog.layout=com.bt.vosp.common.logging.CustomizedXMLLayout
+
+# Category A8
+log4j.logger.NGCALog=INFO,NGCALog
+#Appender VospCommonRestLog
+log4j.appender.NGCALog=org.apache.log4j.RollingFileAppender
+log4j.appender.NGCALog.File=C:/Users/609623983/project/Sprint19/NGCA/logs/CFI.log
+log4j.appender.NGCALog.MaxFileSize=500KB
+log4j.appender.NGCALog.MaxBackupIndex=100
+log4j.appender.NGCALog.layout=com.bt.vosp.common.logging.CustomizedXMLLayout
+
+
+
+log4j.logger.ClientFacingWebServiceLog=INFO,ClientFacingWebServiceLog
+#Appender ClientFacingWebServiceLog
+log4j.appender.ClientFacingWebServiceLog=org.apache.log4j.RollingFileAppender
+log4j.appender.ClientFacingWebServiceLog.File=C:/Users/609623983/project/Sprint19/NGCA/logs/CFI.log
+log4j.appender.ClientFacingWebServiceLog.MaxFileSize=500KB
+log4j.appender.ClientFacingWebServiceLog.MaxBackupIndex=100
+log4j.appender.ClientFacingWebServiceLog.layout=com.bt.vosp.common.logging.CustomizedXMLLayout

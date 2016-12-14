@@ -1,0 +1,29 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.bt.vosp</groupId>
+    <artifactId>NGCA</artifactId>
+    <version>1.0</version>
+  </parent>
+  <packaging>war</packaging>
+  <artifactId>VOSP-BackendServicesWebendpoint</artifactId>
+  <name>VOSP-BackendServicesWebendpoint</name>
+  <dependencies>
+  	<dependency>
+			<groupId>com.bt.vosp.common</groupId>
+			<artifactId>vosp-common</artifactId>
+			<version>1.0</version>
+		</dependency>
+			<dependency>
+			<groupId>com.bt.vosp.capability</groupId>
+			<artifactId>vosp-nextgenclientauthorisation</artifactId>
+			<version>1.0</version>
+		</dependency>
+  </dependencies>
+  <build>
+		<finalName> 
+        NGCA
+        </finalName>
+        </build>
+  
+</project>
